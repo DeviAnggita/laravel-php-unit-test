@@ -20,6 +20,6 @@ class EmailVerificationPromptController extends Controller
     {
         return $request->user()->hasVerifiedEmail()
             ? Redirect::route('home') // Change 'home' to your actual home route
-            : Redirect::route('verification.notice'); // Change 'verification.notice' to your actual email verification notice route
+            : Redirect::route('verification.notice');
     }
 }

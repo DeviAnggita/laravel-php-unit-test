@@ -26,7 +26,7 @@ class EmailVerificationNotificationController extends Controller
 
         $user->sendEmailVerificationNotification();
 
-        return Redirect::route('verification.notice') // Change 'verification.notice' to your actual email verification notice route
+        return Redirect::route('verification.notice')
             ->with('status', 'verification-link-sent');
     }
 }

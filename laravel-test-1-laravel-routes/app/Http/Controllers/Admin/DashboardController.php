@@ -7,7 +7,13 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function __invoke()
+    public function index(Request $request)
+    {
+        return view('admin.dashboard');
+    }
+
+
+    public function __invoke(Request $request)
     {
         return view('admin.dashboard');
     }
